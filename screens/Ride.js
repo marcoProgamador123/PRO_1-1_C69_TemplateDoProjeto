@@ -16,7 +16,7 @@ export default class TransactionScreen extends Component {
 
   getCameraPermissions = async domState => {
 
-    //const { status } = await Permissions.askAsync(Permissions.CAMERA);
+    const { status } = await Permissions.askAsync(Permissions.CAMERA);
     //const { status } = Permissions.askAsync(Permissions.CAMERA);
     //const { status } = await Permissions.askAsync(Permissions);
     //const { status } = await Permissions.askAsync(CAMERA);
@@ -65,14 +65,14 @@ export default class TransactionScreen extends Component {
         </TouchableOpacity>
         */}
 
-        {/*
+        {
         <TouchableOpacity
           style={[styles.button, { marginTop: 25 }]}
           onPress={() => this.getCameraPermissions("scanner")}
         >
           <Text style={styles.buttonText}>Digitalizar QR Code</Text>
         </TouchableOpacity>
-        */}
+        }
 
         {/*
         <TouchableOpacity
